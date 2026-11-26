@@ -1,6 +1,6 @@
 ---
 name: welcome-bootstrap
-description: Set up an existing repository for wristing when the user asks to bootstrap a WRIST workspace. Work with them to configure repository references, branch conventions, Gerrit review and the research workflows.
+description: Bootstrap a WRIST workspace and tailor its research workflows to the user's repository, review and execution choices.
 ---
 
 # Welcome Bootstrap
@@ -31,6 +31,8 @@ Configure the actual implementation checkout for Gerrit when selected:
 3. Document the exact review command with the chosen remote and base, for example `git push review HEAD:refs/for/main%wip`. Write the team's rule for updating a patch set with the same Change-Id and for marking work ready. Bootstrap only configures the route. Publication follows the user's agreed workflow. [Gerrit upload documentation](https://gerrit-review.googlesource.com/Documentation/user-upload.html)
 
 ## Verify and hand off
+
+Before handoff, edit the target's installed workflows, including the shared execution contract and workflow instructions in `AGENTS.md`. Wherever bootstrap settled a choice, state the agreed action directly. For example, a PR workspace should give the base branch and steps for opening and updating the PR. Delete the Gerrit upload and patch-set instructions there. Apply the same edit to repository layout, publication, cleanup and execution. Cut unused alternatives, template examples and qualifiers such as “if configured” wherever the choice is settled. Preserve each workflow’s authorization limits.
 
 Re-read the effective fetch and push URLs and branch policy in each checkout. For Gerrit, verify that the review project advertises the chosen branch with `git ls-remote --exit-code <review-remote> refs/heads/<base>`. Exercise the effective hook on a disposable commit-message file and check its Change-Id or configured Gerrit Link trailer. This checks read access and hook operation without publishing a change. Follow the workspace SSH connection limit across remote operations.
 
