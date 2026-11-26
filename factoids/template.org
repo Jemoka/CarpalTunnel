@@ -1,0 +1,20 @@
+#+title: <one reusable claim or method>
+
+* one-liner
+# State the claim and the conditions under which it holds.
+
+* motivation
+
+* notation
+# Define symbols used below.
+
+* methods
+# Give the equation, procedure or evidence needed to use the claim.
+
+* related work and baselines
+# Use relative Org links to related records.
+
+* References
+# Cite recorded papers with @LastNameYYYY-One_Line_Underscores.
+
+* notes

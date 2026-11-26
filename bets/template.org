@@ -1,0 +1,26 @@
+#+title: <short testable claim>
+# Tag the owning project and any papers used in the declaration.
+
+* motivation
+# Link the prior evidence and name the unresolved question.
+
+* methods
+# Describe the control, treatment, held-fixed budget, seeds and measurement.
+
+* experiments
+| task | t-shirt size | evaluation | status        | outcome |
+|------+--------------+------------+---------------+---------|
+|      |              |            | unimplemented |         |
+
+* expectation
+# State the threshold, guardrails and inconclusive conditions before execution.
+
+* patchpoints
+# Identify the implementation repository and exact files, config and test entry points.
+
+* outcome
+- *status*: unimplemented
+
+** conclusions
+
+* notes

@@ -1,0 +1,5 @@
+.DS_Store
+runlogs
+/worktrees/
+ltximg
+__pycache__/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare Wager"
+  short_description: "Implement a bet and submit its WIP review"
+  default_prompt: "Use $prepare-wager to implement and verify this bet, submit its configured WIP review and record the handoff without dispatching runs."

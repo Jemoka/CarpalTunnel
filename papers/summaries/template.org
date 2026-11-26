@@ -1,0 +1,69 @@
+#+title: paper's actual title
+#+id: Stable Contribution Id here
+#+url: URL here
+
+# Write one concrete sentence that names the baseline, the paper's actual
+# intervention, and the consequence. Avoid slogans such as "uses adaptive
+# compute" when the real mechanism is, for example, top-k selection over
+# multiplicative keep/fork scores followed by score-attenuated attention.
+
+* Notation
+# Use common notation rather than copying the paper's local names. Give the
+# shape and domain of every vector, matrix, scalar, index, set, and distribution
+# used later. Mark whether each object is learned and static at inference,
+# fixed by the experiment, or computed from the current input. Do not introduce
+# symbols later that are absent here or defined immediately at first use.
+
+* Novelty
+# First state the strongest baseline's mechanics, not just its name. Then state
+# the smallest exact change that produces the new method. Separate genuinely
+# new machinery from combinations of existing components, and distinguish the
+# paper's demonstrated contribution from the authors' interpretation.
+# Explicitly reconstruct the paper's claims: state each central empirical,
+# theoretical, or mechanistic claim; its assumptions and scope; and which later
+# theorem, experiment, or ablation is supposed to support it. Do not reduce a
+# paper to its algorithm, and do not state an author's interpretation as fact.
+
+* Motivation
+# Name the concrete failure of the baseline and the evidence that it matters.
+# Explain why the proposed intervention targets that failure. Avoid generic
+# claims such as "LLMs are expensive" unless the method acts on a precisely
+# identified cost or bottleneck.
+
+* Methods
+# Make this section sufficient to mentally execute or reimplement the method.
+# Begin with the full baseline equation or algorithm. Then walk through the new
+# method in execution order: inputs, scores, normalization, discrete choices,
+# state updates, losses, training stages, and inference behavior. Show the full
+# equations before unpacking their terms. Explain edge cases and any train/test
+# differences.
+#
+# Inventory every new parameter with its shape and count formula. State which
+# quantities are learned, fixed, sampled, or input-dependent. Give time and
+# memory complexity relative to the baseline and say which practical costs
+# FLOP counts omit, such as routing, bandwidth, decoding, synchronization, or
+# irregular kernels. If the paper is ambiguous, quote the ambiguity in your own
+# words rather than silently filling it in.
+
+* Key Figures
+# Each item must identify the figure/table, model and dataset, comparison
+# baseline, metric, absolute values or delta, and the experimental variable held
+# fixed (parameters, FLOPs, tokens, latency, memory, etc.). End by stating what
+# the result establishes and what it does not establish. Include the decisive
+# mechanism ablations, not only headline benchmark wins.
+# Tie every central claim from Novelty to evidence here. If a claim has only
+# indirect evidence, say that explicitly. If a theorem establishes an idealized
+# statement while experiments test a different practical regime, keep them
+# separate.
+# - *Figure/Table number*: setup; exact result; supported conclusion; limitation.
+
+* Factoids
+# List factoid IDs introduced by this paper. Create a factoid only for a small,
+# reusable claim or method that will matter outside this paper; do not turn the
+# abstract or every result into a factoid.
+
+* Notes
+# Record limitations, negative results, sensitivity, assumptions, unresolved
+# ambiguities, and corrections to tempting but unsupported readings. Explicitly
+# flag narrow evaluation scope, weak baselines, train/test contamination, and
+# cases where nominal compute savings may not become wall-clock savings.
